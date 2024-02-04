@@ -1,8 +1,28 @@
-table{
-  width: 100€;
+table {
+  width: 100px;
+
+  border: rgb(31, 128, 219) 5px solid;
 }
 
-.mat-form-field{
+tr:hover {
+  background-color: rgb(222, 230, 238);
+}
+
+
+
+.mat-form-field {
   font-size: 14px;
   width: 20%;
 }
+
+h1 {
+  text-align: center;
+  font-size: 3em;
+  border-bottom: 3em;
+}
+
+
+tr:nth-child(even) {
+  background-color: #e7dfdf;
+}
+

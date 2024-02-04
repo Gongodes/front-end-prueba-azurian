@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
 import {MatTableModule} from '@angular/material/table'
 import {MatPaginatorModule} from '@angular/material/paginator'
@@ -25,6 +25,18 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
     MatInputModule,
 
   ],
+  exports: [
+    BrowserModule,
+    BrowserAnimationsModule,
+    HttpClientModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule,
+    MatFormFieldModule,
+    MatInputModule,
+
+  ],
+
   providers: [
     provideClientHydration(),
     provideAnimationsAsync()
